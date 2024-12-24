@@ -1,0 +1,70 @@
+A new release (3.6) of the Matlab ICA toolbox for electrophysiological data
+    analysis is available at  http://www.cnl.salk.edu/~scott/ica.html
+
+We are writing and posting an ONLINE TUTORIAL on using the ICA EEG toolbox. 
+   A good portion of the tutorial is already posted at 
+                http://www.cnl.salk.edu/~scott/icatutorial1.html
+   You may refer to it while learning to use the toolbox to analyze data.
+   Your comments and suggestions are welcome.
+
+The ICA toolbox has now been downloaded by over 2400 users 
+    from over 50 countries and as many research fields.
+
+--> Please email feedback about things that do or don't work, 
+    or any suggested improvements. If you improve your working 
+    versions of the scripts, please send me a copy or description.
+    I will credit your suggestions.
+
+--> We are hosting a ICA/Biomedical mailinglist. Send ICA/Biomedical news, 
+    FYI or queries to icabio-request@salk.edu 
+
+--> To receive no more ICA news messages, reply to this message
+    with the word UNSUBSCRIBE as text.
+                                             Scott Makeig
+--------------------------------------------------------------------------
+NEW TUTORIAL AVAILABLE
+
+NEW FUNCTIONS in release 3.6:
+
+** rmart() - remove EOG artifacts from EEG data using multiple time-lag
+   regression. Added back to the toolbox -- though we prefer using ICA for 
+   this purpose! (See new publication below).
+** copyaxis() - necessary for function axcopy() (popup axes in separate windows on click)
+
+NEW FEATURES/fixes:
+
+** envtopo(), a new [-n] option for arg 'compnums' directs envtopo() to
+   show only the largest n (<=7) component envelopes and maps. Also, line
+   colors and styles have been made bolder.
+** binica() now uses unique filenames for data, script, weights and sphere
+   files, to avoid conflicts when multiple binica() calls are made in the
+   same pwd.
+** binica() now reads the .wts file correctly when 'pca' ncomps < nchans in
+** timef() fixed recent version bug in calculating output (and displayed)
+   frequencies when cycles >0 - they were 1:n instead of actual Hz values! 
+** Incorrect (chans<->frames) comments in binica.sc have been fixed.
+
+BUGS:
+** In erpimage(), the 'phase' option may not work in MATLAB 5.2 (ok in 5.3)???
+** In erpimage(), the 'allcohers' option is not debugged. 
+
+--------------------------------------------------------------------------
+      NEWS of ICA applications to biomedical research
+
+RECENT PUBLICATIONS on ICA decomposition of biomedical data: 
+
+    Jung T-P, Makeig S, Westerfield W, Townsend J, Courchesne E, and
+    Sejnowski TJ, "Removal of eye activity artifacts from visual event-
+    related potentials in normal and clinical subjects", Clinical
+    Neurophysiology 111:1745-58, 2000.
+
+--------------------------------------------------------------------------
+FOR FURTHER INFO:
+
+     http://www.cnl.salk.edu/~scott/ica.readme.html
+      http://www.cnl.salk.edu/~tewon/ica_cnl.html
+      http://www.cnl.salk.edu/~scott/icafaq.html
+      http://www.cnl.salk.edu/~scott/icabib.html
+
+               Scott Makeig CNL / Salk Institute
+                     Wed Dec 13 2000
