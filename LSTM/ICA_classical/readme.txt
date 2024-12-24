@@ -1,27 +1,27 @@
-1.ä¸»å‡½æ•°ä¸ºfastica,å‡½æ•°å®šä¹‰ä¸ºï¼š
+1.Ö÷º¯ÊýÎªfastica,º¯Êý¶¨ÒåÎª£º
 function [Out1, Out2, Out3] = fastica(mixedsig, varargin)
 
-- mixedsig: è§‚æµ‹æ··åˆä¿¡å·ï¼ŒM*Kåˆ—è¡¨ç¤ºæœ‰ Mè·¯è§‚æµ‹ä¿¡å·ï¼Œå…±æœ‰Kä¸ªé‡‡æ ·ç‚¹ã€‚
-- varargin: å¯è°ƒå‚æ•°ï¼Œå…·ä½“å¯ä»¥å‚ç…§ã€ŠMatlabä¸­FastICAå·¥å…·ç®±çš„ä½¿ç”¨è¯´æ˜Ž.pdfã€‹
+- mixedsig: ¹Û²â»ìºÏÐÅºÅ£¬M*KÁÐ±íÊ¾ÓÐ MÂ·¹Û²âÐÅºÅ£¬¹²ÓÐK¸ö²ÉÑùµã¡£
+- varargin: ¿Éµ÷²ÎÊý£¬¾ßÌå¿ÉÒÔ²ÎÕÕ¡¶MatlabÖÐFastICA¹¤¾ßÏäµÄÊ¹ÓÃËµÃ÷.pdf¡·
 
-- Out1: icasig,è§£æ··åˆåŽçš„ä¿¡å·ï¼Œæ¯ä¸€è¡Œè¡¨ç¤ºä¼°è®¡ç‹¬ç«‹åˆ†é‡ï¼ˆICï¼‰ã€‚
-- Out2ï¼šAï¼Œè®¡ç®—å‡ºæ¥çš„æ··åˆçŸ©é˜µ
-- Out3: Wï¼Œè®¡ç®—å‡ºæ¥çš„è§£æ··åˆçŸ©é˜µ
+- Out1: icasig,½â»ìºÏºóµÄÐÅºÅ£¬Ã¿Ò»ÐÐ±íÊ¾¹À¼Æ¶ÀÁ¢·ÖÁ¿£¨IC£©¡£
+- Out2£ºA£¬¼ÆËã³öÀ´µÄ»ìºÏ¾ØÕó
+- Out3: W£¬¼ÆËã³öÀ´µÄ½â»ìºÏ¾ØÕó
 
 
-2.ä½¿ç”¨æ ·ä¾‹ï¼ˆMixedS.matä¸ºæµ‹è¯•æ•°æ®ï¼‰ï¼š
+2.Ê¹ÓÃÑùÀý£¨MixedS.matÎª²âÊÔÊý¾Ý£©£º
 eg1: [icasig, A, W] = fastica(MixedS)
 
 eg2: [icasig] = fastica(MixedS)
 
 eg3: [A, W] = fastica(MixedS)
 
-eg4: % 'numOfIC'ä¸ºç‹¬ç«‹åˆ†é‡æ•°ï¼Œé»˜è®¤å’Œè¾“å…¥æ··åˆä¿¡å·è¡Œæ•°ç›¸åŒï¼Œ'displayMode'è®¾ç½®ç»˜å›¾æ¨¡å¼ã€‚
+eg4: % 'numOfIC'Îª¶ÀÁ¢·ÖÁ¿Êý£¬Ä¬ÈÏºÍÊäÈë»ìºÏÐÅºÅÐÐÊýÏàÍ¬£¬'displayMode'ÉèÖÃ»æÍ¼Ä£Ê½¡£
 
      [icasig, A, W] = fastica(MixedS, 'numOfIC', 3, 'displayMode', 'signals')
 
 
-3.å…·ä½“è¯´æ˜Žå¯ä»¥å‚è§ã€ŠMatlabä¸­FastICAå·¥å…·ç®±çš„ä½¿ç”¨è¯´æ˜Ž.pdfã€‹
+3.¾ßÌåËµÃ÷¿ÉÒÔ²Î¼û¡¶MatlabÖÐFastICA¹¤¾ßÏäµÄÊ¹ÓÃËµÃ÷.pdf¡·
 
 
-4.fasticagæä¾›å¯è§†åŒ–æ“ä½œï¼Œä½†æ˜¯ä¸ªäººå®žè·µå‘çŽ°æ— æ³•å¯¼å…¥æ•°æ®ï¼Œæ‰€ä»¥æ— æ³•æ­£å¸¸ä½¿ç”¨ã€‚
+4.fasticagÌá¹©¿ÉÊÓ»¯²Ù×÷£¬µ«ÊÇ¸öÈËÊµ¼ù·¢ÏÖÎÞ·¨µ¼ÈëÊý¾Ý£¬ËùÒÔÎÞ·¨Õý³£Ê¹ÓÃ¡£
